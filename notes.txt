@@ -1,0 +1,16 @@
+1.  To compile python-mido, one must edit the PKGBUILD,
+and set depends() to
+depends('python-rtmidi' 'python2-rtmidi')
+
+2.  Principal code origin is under here:
+https://github.com/olemb/mido/tree/master/examples
+
+3.  python2 tcp2midi.py localhost:44440
+Creates a TCP server and one JACK MIDI playback port.
+Every message received by the TCP server, will be sent to
+the one JACK MIDI port.
+
+4.  python2 midi2tcp.py localhost:44440
+Creates one JACK MIDI capture port.
+Any MIDI messages received at that port, will be
+sent to a pre-existing TCP server.

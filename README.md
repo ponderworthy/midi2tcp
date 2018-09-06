@@ -1,5 +1,5 @@
 # midi2ip
-This is very early pre-pre-pre-pre-alpha of a method to throw JACK MIDI reliably over an IP connection.  Not for any use at all yet.  Contributors encouraged!
+This is alpha of a method to throw MIDI reliably over an IP connection.  Only earliest testing completed.  Contribution solicited!
 
 To try it, [compile and] install the Mido library, and run these in separate xterms.  On this machine python3 didn't work for it, so:
 

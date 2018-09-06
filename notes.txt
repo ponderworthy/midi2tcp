@@ -13,4 +13,5 @@ the one JACK MIDI port.
 4.  python2 midi2tcp.py localhost:44440
 Creates one JACK MIDI capture port.
 Any MIDI messages received at that port, will be
-sent to a pre-existing TCP server.
+sent to a pre-existing TCP server to which
+it connects at startup.

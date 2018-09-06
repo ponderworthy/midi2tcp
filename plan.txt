@@ -1,11 +1,9 @@
 1.  Use the Mido library, which does MIDI and JACK and ALSA:
 https://mido.readthedocs.io/en/latest/socket_ports.html
 
-2.  Build a pair of applets which just do TCP to each other.
-Successfully connect, successfully send and receive data.
-
-3.  Then connect to JACK.  Use the rtmidi backend, it
-is recommended, and does JACK and ALSA:
-https://mido.readthedocs.io/en/latest/backends/rtmidi.html
+2.  The goal is a pair of applets, one MIDI to TCP,
+the other TCP to MIDI, monodirectional for simplicity
+and predictability.  One pair of applets per direction.
+This goal has been achieved.
 
 

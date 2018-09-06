@@ -15,7 +15,7 @@ import mido
 from mido import sockets
 
 if len(sys.argv) <= 1:
-    print('Usage: python[2] tcp2midi.py hostname:44440]')
+    print('Usage: python[2] tcp2midi.py hostname:44440')
     exit(0)
 
 (host, port) = sockets.parse_address(sys.argv[1])

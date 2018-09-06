@@ -15,7 +15,7 @@ import time
 import mido
 
 if len(sys.argv) <= 1:
-    print('Usage: python[2] midi2tcp.py hostname:44440]')
+    print('Usage: python[2] midi2tcp.py hostname:44440')
     exit(0)
 
 jack_port = mido.open_input('tcp2midi', virtual=True)
